@@ -1,0 +1,609 @@
+@font-face {
+  font-family: league;
+  src: url(/fonts/LeagueSpartan-SemiBold.ttf);
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: black;
+  overflow-x: hidden;
+
+}
+
+nav{
+  display: inline;
+  margin-left: 0px;
+}
+ h1{
+  display: inline;
+  margin-left: 100px;
+  font-size: 50px;
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  font-weight: bold;
+  font-family: arial;
+  background-image: url('/picsicons/back.png');
+  background-position: 0 0;
+  background-size: contain;
+  -webkit-background-clip: text;
+  animation: sky linear infinite 30s;
+}
+.main h1 {
+  margin-left: 0px;
+}
+
+
+@keyframes sky {
+  100%{
+    background-position: 2000px 0;
+  }
+}
+
+.list{
+  display: inline-flex;
+  list-style: none;
+}
+.list li{
+  width: 140px;
+}
+
+.list li a{
+  color: pink;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.list li a:hover{
+  color: purple;
+}
+.drop
+{
+width: 20px;
+display: none;
+}
+
+.main{
+  background-color: black;
+  padding: 10px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  right: 0;
+  left: 0;
+  top: 0;
+  border-bottom: 2px pink solid;
+}
+
+@media (max-width: 764px) {
+  .main{
+    background-color: black;
+    /* margin-left: -20px; */
+  }
+
+  h1{
+  display: inline;
+  margin-left: 100px;
+  font-size: 40px;
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  font-weight: bold;
+  font-family: arial;
+  background-image: url('/picsicons/back.png');
+  background-position: 0 0;
+  background-size: contain;
+  -webkit-background-clip: text;
+  animation: sky linear infinite 30s;
+}
+
+  nav{
+  display: inline;
+  position: absolute;
+  margin-top: 100px;
+  height: 100%;
+  /* background-color: black; */
+  margin-left: 1000px;
+  transition: 3s;
+
+}
+
+.menu{
+  margin-left: 250px;
+  transition: 1s;
+}
+
+.list{
+  display: grid;
+  list-style: none;
+}
+
+.drop
+{
+width: 30px;
+display: inline;
+margin-left: 0px;
+top: 19px;
+/* position: fixed; */
+}
+
+.list li{
+  width: 140px;
+  margin-top: 10px;
+  margin-left: 5px;
+  background-color: black;
+  padding: 10px;
+}
+}
+
+
+/* styling for the header ends here */
+
+/* styling for the section begins here */
+
+.intro{
+  background-image: url('/picsicons/we.png');
+  margin-top: 5%;
+  height: 700px;
+  padding: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -200px;
+}
+
+ p{
+  color: white;
+  font-size: 25px;
+  margin-left: 100px;
+  font-family: league;
+}
+
+.content{
+  margin-top: 7%;
+}
+
+
+.animation{
+  background-color: white;
+  width: 350px;
+  height: 30px;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  margin-left: 100px;
+}
+
+.ani1{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: purple;
+  animation: ani1 linear infinite 5s;
+  transition: 0.5s;
+}
+
+@keyframes ani1{
+100%{
+  transform: translateX(320px);
+}
+} 
+
+
+.ani2{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: purple;
+  animation: ani2 linear infinite 5s;
+  transition: 0.5s;
+  margin-top: -30px;
+  margin-left: 320px;
+
+}
+@keyframes ani2{
+100%{
+  transform: translateX(-320px);
+}
+} 
+
+@media (max-width:760px) {
+
+  .intro{
+  background-image: url('/picsicons/we.png');
+  margin-top: 18%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 1px;
+}
+
+.content{
+  margin-top: 7%;
+  margin-left: -90px;
+}
+
+.animation{
+  background-color: white;
+  width: 270px;
+  height: 30px;
+  margin-top: 10px;
+  padding: 2px;
+  border-radius: 20px;
+  margin-left: 100px;
+}
+
+    .ani1{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: purple;
+  animation: ani1 linear infinite 5s;
+  transition: 0.5s;
+}
+
+@keyframes ani1{
+100%{
+  transform: translateX(238px);
+}
+} 
+
+.ani2{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: purple;
+  animation: ani2 linear infinite 5s;
+  transition: 0.5s;
+  margin-top: -30px;
+  margin-left: 238px;
+
+ }
+@keyframes ani2{
+100%{
+  transform: translateX(-238px);
+}
+}  
+}
+
+ /* styling for the intro ends here */
+
+
+/* styling for the about starts here */
+
+#about{
+background-color: rgb(36, 35, 35);
+padding: 10px;
+margin-top: 40px;
+}
+.mypic{
+width: 300px;
+height: 400px;
+margin-top: 25px;
+margin-right: -70px;
+background-image: url('/picsicons/we.jpg');
+background-size: contain;
+animation: slip linear 30s infinite ;
+transition: 1s;
+}
+
+@keyframes slip{
+50%{
+  background-image: url('/picsicons/us.jpg');
+  background-size: cover;
+}
+
+100%{
+  background-image: url('/picsicons/me.jpg');
+  background-size: cover;
+}
+}
+.cont{
+display: flex;
+/* background-color: red; */
+flex-wrap: wrap;
+margin: 100px 10px 100px 10px;
+padding: 10px;
+justify-content: center;
+}
+.reel{
+width: 400px;
+}
+.reel button{
+margin-left: 100px;
+width: 150px;
+padding: 5px;
+font-weight: bold;
+font-size: 20px;
+color: white;
+background-color: purple;
+border-radius: 10px;
+border: white solid 1px;
+}
+
+
+@media (max-width:764px) {
+.mypic{
+width: 150px;
+}
+
+.reel{
+width: 1000px;
+margin-left: 0px;
+/* background-color: blue; */
+}
+.reel h1{
+margin-left: 70px;
+}
+.reel p{
+margin-left: 2px;
+font-size: 20px;
+}
+
+.reel button{
+margin-left: 80px;
+padding: 5px;
+font-weight: bold;
+font-size: 15px;
+width: 150px;
+color: white;
+background-color: purple;
+border-radius: 10px;
+border: white solid 1px;
+}
+
+.cont{
+display: flex;
+/* background-color: red; */
+flex-wrap: wrap;
+margin: 10px 10px 10px 10px;
+align-content: center;
+padding: 10px;
+justify-content: center;
+}
+
+.mypic{
+width: 200px;
+height: 300px;
+margin-top: 25px;
+margin-right: 0px;
+background-image: url('/picsicons/we.jpg');
+background-size: cover;
+animation: slip linear 30s infinite ;
+transition: 1s;
+}
+
+@keyframes slip{
+50%{
+  background-image: url('/picsicons/us.jpg');
+  background-size: cover;
+}
+
+100%{
+  background-image: url('/picsicons/me.jpg');
+  background-size: cover;
+}
+}
+.resume{
+width: 300px;
+margin-top: 10px;
+margin-left: 0px;
+}
+}
+.resume{
+width: 300px;
+margin-top: 10px;
+margin-left: 20px;
+display: none;
+}
+.shoe{
+display: block;
+}
+/* styling for the about ends here */
+
+/* styling for the services begins here */
+.im{
+width: 200px;
+}
+
+.im1{
+width: 150px;
+}
+.img{
+width: 400px;
+height: 300px;
+text-align: center;
+background-color: rgb(36, 35, 35);
+padding: 10px;
+border: pink solid 3px;
+border-radius: 20px;
+padding: 40px;
+margin: 10px;
+
+}
+.s h2{
+margin: 0px;
+font-size: 30px;
+}
+.img p{
+width: 100%;
+margin-left: 5px;
+}
+.con{
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+margin-top: 20px;
+margin-bottom: 20px;
+margin-left: 10px;
+margin-right: 10px;
+}
+
+#services h1{
+margin-left: 45%;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+#services {
+margin-top: 50px;
+margin-bottom: 50px;
+
+}
+h2{
+color: white;
+font-size: 30px;
+}
+.bass{
+width: 120px;
+height: 100px;
+margin: 5px;
+background-color: blue;
+border-radius: 10px;
+border: solid pink 2px;
+margin-bottom: 10px;
+}
+.works{
+display: flex;
+/* width: 100%; */
+flex-wrap: wrap;
+justify-content: center;
+margin-top: 30px;
+}
+.base1{
+background-image: url(/picsicons/tictactoe.png);
+background-size: cover;
+background-position-y: -20px;
+}
+.base2{
+background-image: url(/picsicons/TODO\ LIST\ APP.png);
+background-size: cover;
+/* background-position-y: -20px; */
+}
+.base3{
+background-image: url(/picsicons/youtubeclone.png);
+background-size: cover;
+/* background-position-y: -20px; */
+}
+.base4{
+background-image: url(/picsicons/3D\ ANIMATED\ CUBE.png);
+background-size: cover;
+background-position-x: -10px;
+}
+.base5{
+background-image: url(/picsicons/ANIFACTS.png);
+background-size: cover;
+/* background-position-y: -20px; */
+}
+.base6{
+background-image: url(/picsicons/weightconverter.png);
+background-size: cover;
+/* background-position-y: -20px; */
+}
+@media (max-width: 764px) {
+#services h1{
+margin-left: 22%;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.img{
+width: 400px;
+height: 200px;
+text-align: center;
+background-color: rgb(36, 35, 35);
+padding: 10px;
+border: pink solid 3px;
+border-radius: 20px;
+padding: 40px;
+margin: 10px;
+
+}
+.bass{
+width: 70px;
+height: 50px;
+margin: 2px;
+background-color: blue;
+border-radius: 10px;
+border: solid pink 2px;
+margin-bottom: 10px;
+}
+
+.im{
+width: 150px;
+}
+
+.im1{
+width: 150px;
+}
+
+.img p{
+width: 100%;
+margin-left: 5px;
+font-size: 15px;
+}
+.img h2{
+font-size: 20px;
+}
+
+.works{
+display: flex;
+flex-wrap: wrap;
+/* background-color: red; */
+margin-left: -30px;
+justify-content: center;
+width: 120%;
+padding: 5px;
+
+}
+
+}
+
+/* styling for the services ends here */
+
+/* styling for the footer/contact info begins here */
+
+.riv{
+width: 40px;
+margin: 5px;
+}
+.co{
+display: flex;
+margin-top: 20px;
+justify-content: center;
+margin-left: 2%;
+}
+#contact{
+text-align: center;
+margin-bottom: 20px;
+}
+#contact h1{
+border-top: solid 3px purple;
+width: 100%;
+margin-bottom: 20px;
+}
+
+@media (max-width:764px) {
+.riv{
+width: 40px;
+}
+
+#contact h1{
+border-top: solid 3px purple;
+width: 100%;
+margin-bottom: 20px;
+margin-left: -10px;
+}
+
+/* .co{
+display: grid;
+grid-template-columns: 50px 50px;
+margin-top: 20px;
+padding-left: 33%;
+} */
+}
+
+/* styling for the footer/contact info ends here */
